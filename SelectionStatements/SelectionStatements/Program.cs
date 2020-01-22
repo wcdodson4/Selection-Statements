@@ -78,6 +78,16 @@ namespace SelectionStatements
             {
                 Console.WriteLine(i);
             }
+
+            var myArray = new int[] { 3, 10, 4 };
+            var sum = 0;
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                sum += myArray[i];
+                //sum = sum + 3 = 3
+                //sum = 3 + 10 = 13
+                //sum = 13 + 4 = 17
+            }
         }
 
     }
