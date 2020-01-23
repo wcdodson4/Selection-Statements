@@ -15,11 +15,32 @@ namespace ArraysAndLists
             dinosaurs.Add("ankylosaurus");
             dinosaurs.Add("spinosaurus");
             dinosaurs.Add("stegosaurus");
+
+            for (int i=0; i < dinosaurs.Count; i++)
+            {
+                Console.WriteLine(dinosaurs[i]);
+            }
             
             foreach (var dino in dinosaurs)
             {
                 Console.WriteLine(dino);
             }
+
+            //Create an array (using inferred typing) named dogs of size 4 that will hold items of type string
+            //add 4 names to the dogs array
+            //using a for loop to print each dog name
+
+            var dogs = new string[4];
+            dogs[0] = "beagle";
+            dogs[1] = "poodle";
+            dogs[2] = "bulldog";
+            dogs[3] = "lab";
+
+            for (int i=0; i < dogs.Length; i++)
+            {
+                Console.WriteLine(dogs[i]);
+            }
+
         }
     }
 }
