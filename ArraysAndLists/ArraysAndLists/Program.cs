@@ -41,6 +41,39 @@ namespace ArraysAndLists
                 Console.WriteLine(dogs[i]);
             }
 
+            foreach (var dog in dogs)
+            {
+                Console.WriteLine(dog);
+            }
+
+
+            //Fibonacci
+            var fibonacciNumbers = new List<int> { 1, 1 };
+
+            //using while
+            while (fibonacciNumbers.Count < 20)
+            {
+                var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+                var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+                fibonacciNumbers.Add(previous + previous2);
+            }
+            foreach (var num in fibonacciNumbers)
+            {
+                Console.WriteLine(num);
+            }
+
+            //using for
+            var sum = 0;
+            for (int i = 0; i < 18; i++)
+            {
+                sum = fibonacciNumbers[i] + fibonacciNumbers[i + 1];
+                fibonacciNumbers.Add(sum);
+            }
+            foreach (var num in fibonacciNumbers)
+            {
+                Console.WriteLine(num);
+            }
         }
     }
 }
